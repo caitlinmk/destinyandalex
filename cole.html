@@ -1,0 +1,187 @@
+<body>
+  <div class="header">
+    <div class="header-banner">
+      <div class="logo"></div>
+    </div>
+    <span class="header-link">Home</span>
+    <span class="header-link">Browse</span>
+    <span class="header-link">Search</span>
+    <span class="header-link">Invite</span>
+    <span class="header-link">Film</span>
+  </div>
+  <div id="main">
+    <div id=col-1>
+      <div class="username"><span class="insert-name">Alex</span></div>
+      <div class="main-info">
+        <img id="profile-pic" src="images/alex-profile.jpg"/>
+        <div class="profile-info">
+          <pre id="bio">
+"How you been?"
+
+Male
+26 years old
+Not Florida, FL
+United States
+          </pre>
+          <div id="last-login">Last Login: <br> June 7, 2016</div>
+        </div>
+      </div>
+      <div class="pics-and-videos"> View my: Pics | Videos</div>
+      <div class="contact-info">
+        <div class="contact-header">Contact <span class="insert-name">Alex</span></div>
+        <span class="contact-link">Send Message</span>
+        <span class="contact-link">Forward to Friend</span>
+        <span class="contact-link">Add to Friends</span>
+        <span class="contact-link">Add to Favorites</span>
+        <span class="contact-link">Instant Message</span>
+        <span class="contact-link">Block User</span>
+        <span class="contact-link">Add to Group</span>
+        <span class="contact-link">Rank User</span>
+      </div>
+      <div class="friend-space">
+        <div class="title">
+          <span class="insert-name">Cole</span>'s Friend space
+        </div>
+        <p style="font-weight: bold;"><span class="insert-name">Cole's </span>top <span style="color: red">1</span> friend</p>
+        <div class="friend">
+          <a href="#" style="display: inline-block; text-align: center;">
+            <p>#1 - Tom</p>
+            <img src="images/tom.jpg">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id=col-2>
+      <div class="extended-network"><span class="insert-name">Cole</span> is an alias</div>
+      <div id="blog-entries">
+        <div class="blog-entry-header">
+          <b>
+            <span class="insert-name">Cole</span>'s Latest Blog Entry
+          </b>
+          [<a href="http://arepublixchickentendersubsonsale.com/" target="_blank">Subscribe to this blog</a>]
+        </div>
+        <div class="blog-entry">Trucks, let me tell you bout em (<a href="http://arepublixchickentendersubsonsale.com/" target="_blank">View More</a>)</div>
+        <div class="blog-entry">Top 10 moments in That 70's Show (<a href="http://arepublixchickentendersubsonsale.com/" target="_blank">View More</a>)</div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0 18em;
+    background-color: #999;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .header-banner .logo {
+    height: 80px;
+    width: 270px;
+    transform: scale(0.5);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: -20px;
+    background-image: url('assets/logo.png');
+  }
+  #main {
+    flex: 1;
+    display: flex;
+    padding: 0 1em;
+    background-color: #fff;
+  }
+  #col-1 {
+    padding: 1em;
+  }
+  .header {
+    background-color: #0830a0;
+    text-align: center;
+    padding: 0.5em;
+    color: white;
+  }
+  .header-link::after {
+    content: '|';
+    margin-right: 1em;
+    margin-left: 1em; 
+  }
+  .header-link:last-child::after {
+    content: '';
+  }
+  .main-info {
+    display: flex;
+  }
+  .username {
+    font-weight: bold;
+    font-size: 18pt;
+  }
+  #profile-pic {
+    margin-right: 1em;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+  }
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+  }
+  #bio {
+    flex: 1;
+  }
+  .pics-and-videos {
+    margin-top: 1em;
+  }
+  .contact-info {
+    margin-top: 1em;
+    border: 2px solid #33F;
+    max-width: 600px;
+  }
+  .contact-header {
+    background: #33F;
+    padding: 0.2em 0.5em;
+    color: white;
+  }
+  .contact-link {
+    padding: 0.5em;
+    width: calc(49% - 1em);
+    display: inline-block;
+  }
+  #col-2 {
+    padding-left: 2em;
+    padding-top: 3em;
+    padding-right: 1em;
+    flex: 1;
+  }
+  .extended-network {
+    border: 2px solid black;
+    padding: 3em;
+    text-align: center;
+    font-size: 18pt;
+  }
+  .blog-entry-header {
+    font-size: 16pt;
+    margin-top: 0.5em;
+  }
+  .blog-entry {
+    font-size: 14pt;
+    margin: 1.5em 0;
+  }
+  .friend-space {
+    margin-top: 1em;
+  }
+  .friend-space .title {
+    background-color: #ea0;
+    padding: 0.3em 0.5em;
+  }
+  .friend {
+    display: inline-block;
+  }
+  .friend span {
+    text-align: center;
+  }
+  .friend img {
+    height: 130px;
+    width: auto;
+    border: 2px solid #0830a0;
+  }
